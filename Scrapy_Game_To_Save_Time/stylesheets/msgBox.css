@@ -1,0 +1,42 @@
+div.msg {
+	display: flex;
+	align-items: center;
+}
+
+._a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .5s;
+}
+
+._a.inactive {
+	opacity: 0;
+}
+
+._a.active {
+	opacity: 1;
+}
+
+._a > .btn {
+	position: absolute;
+}
+
+.enough {
+	cursor: pointer;
+	position: absolute;
+	bottom: 20px;
+	left: 50vw;
+	transform: translateX(-50%);
+	color: var(--str-clr);
+	display: none;
+}
+
+.img {
+	display: none;
+}

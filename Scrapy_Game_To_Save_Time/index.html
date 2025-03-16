@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/_init.css">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/msgBox.css">
+		<title>ScrapyMad</title>
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	</head>
+	<body>
+		<div class="img">
+			<img src="./img/cat.gif">
+		</div>
+		<div class="msg"></div>
+		<div class="_a inactive">
+			<div class="btn">Enter</div>
+		</div>
+
+		<span class="enough">Enough !</span>
+
+		<div class="meter">
+	        <span id="XC"></span>
+	        <span id="YC"></span>
+	        <span id="DIS"></span>
+	    </div>
+	</body>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		const TXT_ANIM = document.querySelector('.msg');
+		new Typewriter(TXT_ANIM, {deleteSpeed: 1})
+		.changeDelay(35)
+		.typeString("I hope you're ready to be the most organized person of the world... ")
+		.pauseFor(500)
+		.typeString("thanks to <em>ScrapyList</em>.")
+		.pauseFor(4000)
+		.deleteChars(90)
+		.pauseFor(500)
+		.typeString("I mean... If you can ! :)")
+		.pauseFor(1000)
+		.deleteChars(25)
+		.pauseFor(500)
+		.typeString("<em>hihihihihihihi</em>")
+		.pauseFor(500)
+		.deleteChars(14)
+		.typeString("Good luck !")
+		.pauseFor(2000)
+		.deleteChars(11)
+		.typeString("Click the button bellow.")
+		.pauseFor(2000)
+		.deleteChars(29)
+		.start();
+
+		setTimeout(() => {
+			document.querySelector('._a').classList.remove('inactive');
+			document.querySelector('._a').classList.add('active');
+		}, 26000);
+	</script>
+	<script type="text/javascript" src="./scripts/a.js"></script>
+</html>

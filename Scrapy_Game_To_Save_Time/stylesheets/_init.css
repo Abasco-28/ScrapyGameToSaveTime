@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--main-clr: #2bc5a9;
+	--main-clr-b: #75e1cd;
+	--em-clr: #fbae3c;
+	--str-clr: #fa386d;
+	--txt-clr: #fbfbfb;
+	--back-clr: #221c4c;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	padding: 70px 10vw;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Consolas;
+	letter-spacing: .7px;
+	color: white;
+	background: black;
+}
+
+em {
+	color: var(--em-clr);
+}
+
+.btn {
+	display: flex;
+	width: fit-content;
+	padding: 10px 25px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: var(--main-clr);
+	color: black;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: .5s;
+}
+
+.btn:hover {
+	background: var(--main-clr-b);
+}
